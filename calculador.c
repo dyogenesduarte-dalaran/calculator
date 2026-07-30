@@ -20,3 +20,17 @@ int main() {
     
     return 0;    
 }
+
+/*
+
+O que fazer sempre que qualquer alteração for realizada no código:
+
+
+git add .
+git commit -m "update: alteração realizada"
+git push origin main
+
+
+
+
+*/
