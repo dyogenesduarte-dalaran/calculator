@@ -8,7 +8,7 @@ int main() {
     int segundonumero;
     char operador;
     int resultado; 
-
+    
 
     printf("calculadora ->");
     scanf("%99s", expressao);
@@ -16,8 +16,7 @@ int main() {
     printf("expressao recebida %s\n", expressao);
 
 
-
-
+   
     
     return 0;    
 }
