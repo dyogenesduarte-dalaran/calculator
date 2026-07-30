@@ -15,6 +15,11 @@ int main() {
 
     printf("expressao recebida %s\n", expressao);
 
+    if (caractere >= '0' && caractere <= '9');
+    for (indice = 0; expressao[indice] != '\0'; indice++)
+{
+    // analisar caractere
+}
 
    
     
