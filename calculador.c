@@ -1,25 +1,48 @@
 #include <stdio.h>
+#include <stdbool.h>
+
 
 int main() {
 
     char expressao[100];
-    int indice ;
-    int primeironumero;
-    int segundonumero;
-    char operador;
-    int resultado; 
-    
 
-    printf("calculadora ->");
+    int indice;
+
+    int primeironumero = 0;
+    int segundonumero = 0;
+
+    char operador;
+
+    int resultado = 0; 
+    
+    bool operadorEncontrado = false;
+
+    printf("Vamos calcular:\n");
     scanf("%99s", expressao);
 
-    printf("expressao recebida %s\n", expressao);
-
-    if (caractere >= '0' && caractere <= '9');
     for (indice = 0; expressao[indice] != '\0'; indice++)
-{
-    // analisar caractere
-}
+    {
+        if (expressao[indice] >= '0' && expressao[indice] <='9')
+        {
+            if (operadorEncontrado == false)
+            {
+                primeironumero = primeironumero * 10 + (expressao[indice] - '0);     
+            }
+            else
+            {
+                    segundonumero = segundonumero * 10 + (expressao[indice] - '0');
+            }
+        }
+        else .....continuar
+
+
+
+
+    }
+
+
+
+
 
    
     
