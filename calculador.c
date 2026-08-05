@@ -26,39 +26,68 @@ int main() {
         {
             if (operadorEncontrado == false)
             {
-                primeironumero = primeironumero * 10 + (expressao[indice] - '0);     
+                primeironumero = primeironumero * 10 + (expressao[indice] - '0');     
             }
             else
             {
                     segundonumero = segundonumero * 10 + (expressao[indice] - '0');
             }
         }
-        else .....continuar
+        else 
+        {
+            operador = expressao[indice];
+            operadorEncontrado = true;
+        }
+    }
+     if (operador == '+')
+    {
+        resultado = primeironumero + segundonumero;
+    }
+    else if (operador == '-')
+    {
+        resultado = primeironumero - segundonumero;
+    }
+    else if (operador == '*')
+    {
+        resultado = primeironumero * segundonumero;
+    }
+    else if (operador == '/')
+    {
+        if (segundonumero == 0)
+        {
+            printf("Erro: divisao por zero.\n");
+            return 1;
+        }
+
+        resultado = primeironumero / segundonumero;
+    }
 
 
-
-
+    else
+    {
+        printf("Operador invalido.\n");
+        return 1;
     }
 
 
 
+    printf("Resultado: %d\n", resultado);
 
 
-   
+
+      
     
     return 0;    
 }
 
 /*
 
-O que fazer sempre que qualquer alteração for realizada no código:
+            O que fazer sempre que qualquer alteração for realizada no código:
 
-
-git add .
-git commit -m "update: alteração realizada"
-git push origin main
-
-
-
+    
+    git init
+    git add .
+    git commit -m "update: alteração realizada"
+    git push origin main
 
 */
